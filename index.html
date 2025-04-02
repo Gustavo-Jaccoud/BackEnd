@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 1 -  Revisão de HTML e CSS</title>
+
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        section{
+            display: flex;
+            width: 40%;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+        h1{
+            color: rgb(87, 106, 160);
+        }
+        ol, ul{
+            color: rgb(55, 94, 60);
+        }
+        table{
+            width: 20%;
+            margin-bottom: 30px;
+        }
+        th{
+            background-color: gray;
+        }
+        td{
+            background-color: beige;
+        }
+        form{
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            background-color: rgba(162, 162, 219, 0.74);
+            padding: 1%;
+            border-radius: 20px;
+        }
+        input, textarea{
+            height: 25px;
+            border-radius: 5px;
+            border: none;
+            margin-bottom: 10px;
+        }
+    
+        fieldset{
+            border: none;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+<section>
+    <div>
+        <h1>Disciplinas Favoritas</h1>
+        <ol>
+            <li>Estrutura de dados</li>
+            <li>Programação web-backend</li>
+            <li>Rede de computadores</li>
+            <li>Residência em software</li>
+            <li>Auditoria em sistemas da informação</li>
+            <li>Experiência Extensionista</li>
+        </ol>
+    </div>
+    
+    <div>
+        <h1>Hobbys Favoritos</h1>
+        <ul>
+            <li>Ver filmes</li>
+            <li>Jogar jogos</li>
+            <li>Estudar</li>
+            <li>Programar</li>
+            <li>Ler</li>
+        </ul>
+    </div>
+</section>
+
+<table border="1">
+   <tr>
+        <th>Marca:</th>
+        <th>Modelo:</th>
+        <th>Ano:</th>
+        <th>Valor:</th>
+   </tr>
+   <tr>
+        <td>VolksWagen</td>
+        <td>Golf</td>
+        <td>2009</td>
+        <td>R$38.500</td>
+   </tr>
+   <tr>
+        <td>Fiat</td>
+        <td>Palio</td>
+        <td>2010</td>
+        <td>R$19.700</td>
+    </tr>
+    <tr>
+        <td>Honda</td>
+        <td>Civic</td>
+        <td>2012</td>
+        <td>R$61.500</td>
+    </tr>
+    <tr>
+        <td colspan="4">O melhor preço da região</td>
+    </tr>
+</table>
+
+<form action="">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+    <label>Sexo:</label>
+    <fieldset>
+        <input type="radio" id="masculino" name="sexo" value="masculino">
+        <label for="masculino">Masculino</label>
+        <input type="radio" id="feminino" name="sexo" value="feminino">
+        <label for="feminino">Feminino</label>
+    </fieldset>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+    
+    <label for="data_chegada">Data de Chegada:</label>
+    <input type="date" id="data_chegada" name="data_chegada" required>
+    
+    <label for="noites">Número de Noites:</label>
+    <input type="number" id="noites" name="noites" min="1" placeholder="Digite número de noites" required>
+    
+    <label for="hospedes">Número de Hóspedes:</label>
+    <input type="number" id="hospedes" name="hospedes" min="1" placeholder="Digite número de hospedes"required>
+    
+    <label for="mensagem">Mensagem:</label>
+    <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem"></textarea>
+    
+    <input type="submit" value="Enviar">
+</form>
+</body>
+</html>
